@@ -31,6 +31,8 @@ export const SearchFormContainer = styled.form`
     align-items: center;
     gap: 0.75rem;
 
+    cursor: pointer;
+
     &:hover {
       background-color: ${(props) => props.theme["green-500"]};
       border-color: ${(props) => props.theme["gray-500"]};
