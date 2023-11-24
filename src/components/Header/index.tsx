@@ -1,4 +1,6 @@
 import { CurrencyDollar } from "@phosphor-icons/react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { NewTransactionModal } from "../NewTransactionModal";
 
 import {
   HeaderContainer,
@@ -16,7 +18,11 @@ export function Header() {
           <h1>DT Money</h1>
         </LogoContainer>
 
-        <NewTransitionButton>New transaction</NewTransitionButton>
+        <Dialog.Root>
+          <NewTransitionButton>New transaction</NewTransitionButton>
+
+          <NewTransactionModal />
+        </Dialog.Root>
       </HeaderContent>
     </HeaderContainer>
   );

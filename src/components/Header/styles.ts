@@ -1,3 +1,4 @@
+import * as Dialog from "@radix-ui/react-dialog";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -32,7 +33,7 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const NewTransitionButton = styled.button`
+export const NewTransitionButton = styled(Dialog.Trigger)`
   background-color: ${(props) => props.theme["green-500"]};
   color: ${(props) => props.theme.white};
 
