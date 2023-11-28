@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Website development",
+      "type": "income",
+      "category": "Sale",
+      "price": 1400,
+      "createdAt": "2023-11-28T14:19:35.607Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburg",
+      "type": "outcome",
+      "category": "Food",
+      "price": 20,
+      "createdAt": "2023-11-28T15:30:45.123Z"
+    },
+    {
+      "id": 3,
+      "description": "Freelance graphic design",
+      "type": "income",
+      "category": "Freelance",
+      "price": 800,
+      "createdAt": "2023-11-28T16:45:20.890Z"
+    }
+  ]
+}
