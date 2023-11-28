@@ -17,9 +17,9 @@ export const Content = styled(Dialog.Content)`
 
   background-color: ${(props) => props.theme["gray-800"]};
   position: fixed;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 
   form {
     margin-top: 2rem;
@@ -59,6 +59,13 @@ export const Content = styled(Dialog.Content)`
         transition: background-color 0.2s;
       }
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    min-width: auto;
+    width: 100%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
   }
 `;
 
