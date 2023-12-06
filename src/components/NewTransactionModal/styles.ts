@@ -60,7 +60,7 @@ export const Content = styled(Dialog.Content)`
       }
 
       &:disabled {
-        opacity: 0.8;
+        opacity: 0.6;
         cursor: not-allowed;
       }
     }
