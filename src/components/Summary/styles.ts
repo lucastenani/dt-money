@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SummaryContainer = styled.section`
   width: 100%;
@@ -9,10 +9,10 @@ export const SummaryContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-`;
+`
 
 export const SummaryCard = styled.div`
-  background-color: ${(props) => props.theme["gray-600"]};
+  background-color: ${(props) => props.theme['gray-600']};
 
   border-radius: 6px;
   padding: 2rem;
@@ -22,7 +22,7 @@ export const SummaryCard = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    color: ${(props) => props.theme["gray-300"]};
+    color: ${(props) => props.theme['gray-300']};
   }
 
   strong {
@@ -32,6 +32,6 @@ export const SummaryCard = styled.div`
   }
 
   &:last-child {
-    background-color: ${(props) => props.theme["green-700"]};
+    background-color: ${(props) => props.theme['green-700']};
   }
-`;
+`

@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const TransactionsContainer = styled.main`
   width: 100%;
   max-width: 70rem;
   margin: 4rem auto 0;
   padding: 0 1.5rem;
-`;
+`
 
 export const TransactionsTable = styled.table`
   width: 100%;
@@ -14,7 +14,7 @@ export const TransactionsTable = styled.table`
   margin-top: 1.5rem;
 
   td {
-    background-color: ${(props) => props.theme["gray-700"]};
+    background-color: ${(props) => props.theme['gray-700']};
 
     padding: 1.25rem 2rem;
 
@@ -29,15 +29,15 @@ export const TransactionsTable = styled.table`
       border-bottom-right-radius: 6px;
     }
   }
-`;
+`
 
 interface PriceHighLightProps {
-  variant: "income" | "outcome";
+  variant: 'income' | 'outcome'
 }
 
 export const PriceHighLight = styled.span<PriceHighLightProps>`
   color: ${(props) =>
-    props.variant === "income"
-      ? props.theme["green-300"]
-      : props.theme["red-300"]};
-`;
+    props.variant === 'income'
+      ? props.theme['green-300']
+      : props.theme['red-300']};
+`
