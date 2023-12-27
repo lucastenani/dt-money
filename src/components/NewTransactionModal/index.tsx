@@ -3,6 +3,9 @@ import { ArrowCircleDown, ArrowCircleUp, X } from "@phosphor-icons/react";
 import { Controller, useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useContext } from "react";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
+
 import {
   CloseButton,
   Content,
@@ -25,14 +28,17 @@ export function NewTransactionModal() {
     register,
     handleSubmit,
     control,
+    reset,
     formState: { isSubmitting },
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
   });
 
+  const { createTransaction } = useContext(TransactionsContext);
+
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
+    createTransaction(data);
+    reset();
   }
 
   return (
